@@ -1,0 +1,268 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>たなか皮膚科</title>
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/style.css">
+	<script src="https://code.jquery.com/jquery-3.6.2.min.js">
+    </script>
+    <script src="js/script.js">
+    </script>
+</head>
+<body>
+<!-----ヘッダー----------------------------------->   
+<header>
+    <div class="header_wrapper">
+        <p><a href="index.html">たなか皮膚科</a></p>
+        <nav class="pc_nav">
+        <ul>
+            <li><a href="index.html">ホーム</a></li>
+            <li><a href="">医師紹介</a></li>
+            <li><a href="">診療案内</a></li>
+            <li><a href="">医院概要</a></li>
+            <li><a href="#access">アクセス</a></li>            
+            <li><a href="">Web受付</a></li>
+        </ul>
+        </nav>
+    </div>
+</header>
+<!-----メイン------------------------------------->
+<main>
+ <!--トップ----写真スライド&診療時間-------------->
+    <div class="mainvisual_box">
+        <!--写真スライド---->
+        <div class="mainvisual_slide">
+            <img class="slide_pic1" src="images/mainvisual_1.jpg"> 
+            <img class="slide_pic1" src="images/mainvisual_2.jpg"> 
+            <img class="slide_pic1" src="images/mainvisual_3.jpg"> 
+        </div>        
+    
+        <div class="schedule">
+            <table>
+                <tr>
+                    <th>診療時間</th>
+                    <td>月</td><td>火</td><td>水</td><td>木</td><td>金</td><td>土</td><td>日</td>
+                </tr>
+                <tr>
+                    <th>9:00~12:00</th>
+                    <td>○</td><td>○</td><td>○</td><td>×</td><td>○</td><td>○</td><td>×</td>
+                </tr>
+                <tr>
+                    <th>13:00~19:00</th>
+                    <td>○</td><td>○</td><td>○</td><td>×</td><td>○</td><td>×</td><td>×</td>
+                </tr>
+            </table>
+            <div class="schedule_comment">
+                <p>休診日:木曜/土曜午後/日曜/祝日</p>
+                <p>※初診の方は診療終了時間の1時間前までにお越しください。</p>
+                <div class="schedule_comment_bottom">
+                    <div class="schedule_comment_tel"><p>電話　06-0000-0000</p></div>
+                    <div class="schedule_comment_map"><p><a href="#access">mapを見る</a></p></div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--トップ----写真スライド&診療時間 ここまで！！！！！！！！！！---->
+<!------理念---->
+    <div class="policy_box">
+        <div class="policy">
+            <div class="policy_left">
+            <div class="policy_text">
+                <p class="p1">理念</p>
+                <p class="p2">ひとりひとり丁寧な診療、<br>些細こともご相談下さい。</p>
+                <p class="p4">院長の田中みさこです。</p>
+                <p class="p4">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト<br>
+                    テキストテキストテキストテキストテキストテキストテキスト</p>
+                <p class="p4">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト<br>
+                    テキストテキストテキストテキストテキストテキストテキスト</p>
+                <p class="p3">たなか皮膚科　院長<br>
+                   田中　みさこ</p>
+            </div>
+            <div class="introduce_buttom">
+             医師紹介
+                </div>
+            </div>
+            <div class="policy_pic">
+                <img src="images/dr.jpg">
+            </div>
+        </div>        
+    </div>
+<!------診療案内---->  
+    <div class="medical_wrapper">
+        <p class="p1">診療案内</p>
+        <p>保険診療から美容皮膚科まであらゆる皮膚のお悩みを解決いたします。</p>
+        <p>お気軽にご相談ください。</p>
+        <div class="medical_box">
+            <div class="medical">
+                <a href="">
+                <div class="medical_icon"><img src="images/medical_1.png">
+                </div>
+                <p>皮膚科</p>
+            </a>
+            </div>
+            <div class="medical">
+                <a href="">
+                <div class="medical_icon"><img src="images/medical_2.png">
+                </div>
+                <p>美容皮膚科</p>
+            </a>
+            </div>
+            <div class="medical">
+                <a href="">
+                <div class="medical_icon"><img src="images/medical_3.png">
+                </div>
+                <p>小児皮膚科</p>
+            </a>
+            </div>
+            <div class="medical">
+                <a href="">
+                <div class="medical_icon"><img src="images/medical_4.png">
+                </div>
+                <p>アレルギー科</p>
+            </a>
+            </div>
+        </div>
+    </div>
+ <!------おしらせ---->     
+    <div class="tabs">
+        
+            <input id="all" type="radio" name="tab_item" checked>
+            <label class="tab_item" for="all">新着</label>
+            <input id="news" type="radio" name="tab_item">
+            <label class="tab_item" for="news">お知らせ</label>
+            <input id="recruit" type="radio" name="tab_item">
+            <label class="tab_item" for="recruit">採用</label>
+           
+        <div class="tab_content" id="all_content">
+            <div class="tab_content_description">
+            <div class="c-txtsp">
+                <table>
+                    <tr>
+                        <th>2023/1/11</th><td><a href="">新着の内容がここに入ります</a></td>
+                    </tr>
+                    <tr>
+                        <th>2023/1/11</th><td><a href="">新着の内容がここに入ります</a></td>
+                    </tr>
+                    <tr>
+                        <th>2023/1/11</th><td><a href="">新着の内容がここに入ります</a></td>
+                    </tr>
+                    <tr>
+                        <th>2023/1/11</th><td><a href="">新着の内容がここに入ります</a></td>
+                    </tr>
+                    <tr>
+                        <th>2023/1/11</th><td><a href="">新着の内容がここに入ります</a></td>
+                    </tr>
+                    <tr>
+                        <th>2023/1/11</th><td><a href="">新着の内容がここに入ります</a></td>
+                    </tr>
+                </table>
+                
+                </div>
+            </div>
+        </div>
+        <div class="tab_content" id="news_content">
+            <div class="tab_content_description">
+            <div class="c-txtsp">
+                <table>
+                    <tr>
+                        <th>2023/1/11</th><td><a href="">お知らせの内容がここに入ります</a></td>
+                    </tr>
+                    <tr>
+                        <th>2023/1/11</th><td><a href="">お知らせの内容がここに入ります</a></td>
+                    </tr>
+                    <tr>
+                        <th>2023/1/11</th><td><a href="">お知らせの内容がここに入ります</a></td>
+                    </tr>
+                    <tr>
+                        <th>2023/1/11</th><td><a href="">お知らせの内容がここに入ります</a></td>
+                    </tr>
+                    <tr>
+                        <th>2023/1/11</th><td><a href="">お知らせの内容がここに入ります</a></td>
+                    </tr>
+                    <tr>
+                        <th>2023/1/11</th><td><a href="">お知らせの内容がここに入ります</a></td>
+                    </tr>
+                </table>
+                
+            </div>
+            </div>
+        </div>
+        <div class="tab_content" id="recruit_content">
+            <div class="tab_content_description">
+            <div class="c-txtsp">
+                <table>
+                    <tr>
+                        <th>2023/1/11</th><td><a href="">採用の内容がここに入ります</a></td>
+                    </tr>
+                    <tr>
+                        <th>2023/1/11</th><td><a href="">採用の内容がここに入ります</a></td>
+                    </tr>
+                    <tr>
+                        <th>2023/1/11</th><td><a href="">採用の内容がここに入ります</a></td>
+                    </tr>
+                    <tr>
+                        <th>2023/1/11</th><td><a href="">採用の内容がここに入ります</a></td>
+                    </tr>
+                    <tr>
+                        <th>2023/1/11</th><td><a href="">採用の内容がここに入ります</a></td>
+                    </tr>
+                    <tr>
+                        <th>2023/1/11</th><td><a href="">採用の内容がここに入ります</a></td>
+                    </tr>
+                </table>
+                
+            </div>
+            </div>
+        </div>
+    </div>
+ <!------アクセス---->     
+    <div class="access">
+        <div id="access" class="anchor"></div>
+        <p class="p1">アクセス</p>
+        <p>堺筋線「長堀橋駅」3、4番出口から出て、アークホテルの方に向かって徒歩5分</p>
+        <p>〒542-0082 大阪府大阪市中央区島之内１丁目９</p>
+        <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.2139354807473!2d135.50657151559372!3d34.67454969212532!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e73c2b5cac75%3A0xdfa90ee56f74c055!2z44CSNTQyLTAwODIg5aSn6Ziq5bqc5aSn6Ziq5biC5Lit5aSu5Yy65bO25LmL5YaF77yR5LiB55uu77yZ!5e0!3m2!1sja!2sjp!4v1673580458431!5m2!1sja!2sjp" width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+</main>
+<!-----フッター----------------------------------->
+<footer>
+    <div class="footer_wrapper">
+        <div class="footer_box">
+        <p><a href="index.html">たなか皮膚科</a></p>
+        <p>TEL：06-0000-0000</p>
+        
+    <div class="footer_right">
+        
+    <div class="footer_list">
+        <ul>
+            <li>医院概要</li>
+            <li><a href="#">理念</a></li>
+            <li><a href="#">医師紹介</a></li>            
+        </ul>
+    </div>
+    <div class="footer_list">
+        <ul>
+            <li>診察内容</li>
+            <li><a href="#">皮膚科</a></li>
+            <li><a href="#">美容外科</a></li>
+            <li><a href="#">小児皮膚科</a></li>
+            <li><a href="#">アレルギー科</a></li>
+        </ul>
+    </div>
+    <div class="footer_list">
+        <ul>   
+            <li>お知らせ</li>
+            <li><a href="#">採用</a></li>
+            <li><a href="#access">アクセス</a></li>
+        </ul>
+    </div>
+</div>
+</div>
+</div>
+
+</footer>
+</body>
+</html>

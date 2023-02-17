@@ -1,0 +1,453 @@
+@charset "utf-8";
+
+/**全て適用***/
+img {
+    width: 100%;
+    height: auto;    
+}
+
+@font-face {
+  font-family: 'chikugo2'; 
+  src: url(../fonts/GenEiChikugoMin2-R.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'oradano';
+  src: url(../fonts/OradanoGSRR.ttf) format("truetype");
+}
+body {
+    width: 100%;
+    font-family:'chikugo2',sans-serif;
+    
+}
+.anchor {
+  padding-top: 150px;
+  margin-top: -150px;
+}
+/***★★★★ヘッダー★★★★********/
+.header_wrapper{
+    width: 1050px;
+    height: 80px;
+    margin-top: 30px;
+    position: fixed;
+    right: 0;
+    background-color: #ffffff;
+    display: flex;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    z-index: 100;
+    box-shadow: 0 3px 5px -5px black;
+}
+.pc_nav {
+   width: 700px;
+    
+    
+}
+.pc_nav ul {
+    display: flex;
+    width: 700px;
+    margin-top: 25px;
+    margin-left: 180px;
+    
+    
+    
+}
+.pc_nav li {
+    margin: 0 20px;
+}
+.header_wrapper p{
+    font-size: 23px;
+    display: inline-block;
+    
+    margin-top: 23px;
+    margin-left: 50px;
+    
+}
+.pc_nav p{
+    font-size: 20px;
+}
+.pc_nav li:hover{
+  color: green;
+} 
+/***★★★★メイン★★★★********/
+
+/****メインビジュアルスライド**************/
+.mainvisual_box {
+    position: relative;
+}
+
+.mainvisual_slide {
+    width: 100%;
+    height: 48vw; 
+    overflow: hidden;
+    position: relative;
+    z-index: -100;
+  }
+
+  /* imgのみ */
+.slide_pic1 {
+    opacity: 0;   
+    object-fit: cover;
+    position: absolute;  
+    
+    -webkit-animation: anime 12s 0s infinite;
+    animation: anime 12s 0s infinite;
+  }
+  
+  .slide_pic1:nth-of-type(2) {
+    -webkit-animation-delay: 4s;
+    animation-delay: 4s;
+  }
+  
+  .slide_pic1:nth-of-type(3) {
+    -webkit-animation-delay: 8s;
+    animation-delay: 8s;
+  }
+  /* ふわっとアニメーション */
+  @keyframes anime {
+    0% {
+      opacity: 0;
+    }
+    10% {
+      opacity: 1;
+    }
+    35% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+      
+    }
+    100% {
+      opacity: 0;
+    }
+}
+  
+  @-webkit-keyframes anime {
+    0% {
+      opacity: 0;
+    }
+    30% {
+      opacity: 1;
+    }
+    35% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+      
+    }
+    100% {
+      opacity: 0;
+    }
+}
+/*******診療時間***********/
+.schedule {
+    width: 550px;
+    height: 300px;
+    background-color: #EAE7DA;
+    //border: 1px solid forestgreen;
+    position: absolute;
+    top:70%;
+    right:1%;
+    box-shadow: 0 3px 5px -5px black;
+}
+table {
+    width: 500px;
+    height: 100px;
+    margin: 30px auto 10px auto;
+}
+.schedule th {
+    width: 120px;    
+}
+.schedule td {
+    padding-left: 20px;
+    padding-top: 5px;
+}
+
+.schedule tr:nth-of-type(1) {
+    border-bottom: 1px solid #000000;
+}
+.schedule tr:nth-of-type(2) {
+    border-bottom: 1px solid #000000;
+}
+.schedule th:nth-of-type(1){
+    border-right:1px solid #000000;
+}
+.schedule_comment {
+    width: 500px;
+    margin: 0 auto;
+    
+}
+.schedule_comment_bottom{
+    display: flex;
+}
+.schedule_comment_tel {
+    font-size: 20px;
+    margin: 30px;
+}
+.schedule_comment_map{
+    font-size: 20px;
+    margin: 30px;
+}
+.schedule p {
+    line-height: 30px;
+    
+}
+
+/*******理念***********/
+.policy_box {
+    background-color: #d7e6d7;
+    padding-bottom: 100px;
+}
+.policy {
+    display: flex;
+    justify-content: space-around;
+}
+.policy_text {
+    width: 90%;
+    margin-top: 75px;
+    
+    
+}
+.policy_text .p1:nth-of-type(2){
+    
+}
+.policy_text .p1:nth-of-type(2){
+    
+}
+.p1{ /***理念****/
+    font-size: 25px;
+    text-align: center;
+    line-height: 65px;
+    
+    
+}
+.p2 { /***ひとりひとり～****/
+    font-size: 30px;
+    line-height: 60px;
+    text-indent: -170px;
+    padding-left: 66px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.p3 { /***たなか皮膚科　院長****/
+    font-size: 18px;
+    text-align: end;
+    
+}
+.p4 { /***テキストテキスト****/
+    font-size: 15px;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+.policy_pic {
+    width: 450px;
+    margin-top: 150px;
+    
+}
+.introduce_buttom {
+    text-align-last: center;
+    width: 100px;
+    height: 30px;
+    line-height: 35px;
+    background-color: cadetblue;
+    border-radius: 8px;
+    margin: 0 auto;
+    //color: #ffffff;
+    font-weight: 600;
+}
+/*******診療案内***********/
+/*******診療案内***********/
+.medical_wrapper {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.medical_wrapper p{
+    text-align: center;
+}
+.medical_box {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px auto;
+    justify-content: space-around;
+}
+.medical {
+    width: 150px;
+    background-color: beige;
+    margin: 30px;
+    text-align: center;
+    font-size: 18px;
+}
+.medical_icon{
+    width: 75%;
+    margin: 5px auto;
+}
+
+/*******お知らせ***********/
+/*******お知らせ***********/
+/*タブ切り替え全体のスタイル*/
+.tabs {
+  
+  padding-bottom: 40px;
+  background-color: #fff;
+  //box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 840px;
+    height: 300px;
+  margin: 150px auto 150px auto;
+    position: relative;
+}
+.tabs_upper {
+    display: flex;
+    justify-content: space-around;
+}
+
+/*タブのスタイル*/
+.tab_item {
+    position: relative; /* 三角の位置を固定するために設定 */
+    width: 274px; /* 幅 */
+    margin: 0 auto 40px; /* 上 左右 下のマージン */
+    padding: 20px; /* ふきだし内の余白 */
+    background: #fff; /* 背景色 */
+    border: 1px solid #ddd; /* 線色 */
+    text-align: center; /* テキストの揃え */
+} 
+.tab_item::before,
+.tab_item::after { /* 三角 */
+    content: '';
+    border: 14px solid transparent;
+    position: absolute;
+    left: 50%;
+    margin-left: -14px;
+}
+.tab_item::before { /* 線になる部分 */
+    border-top-color: #ddd; /* 吹き出しの線の色と同じ色 */
+    bottom: -28px;
+}
+.tab_item::after { /* 地の部分 */
+    border-top-color: #fff; /* 吹き出しの背景色と同じ色 */
+    bottom: -27px;
+}   
+
+.tab_item:nth-of-type(1){
+    position: absolute;
+    left: 0;
+}
+.tab_item:nth-of-type(2){
+    position: absolute;
+    left: 33%;
+}
+.tab_item:nth-of-type(3){
+    position: absolute;
+    left: 66%;
+}
+/**** 四角枠ホバー時　緑******/
+.tab_item:hover {
+  opacity: 0.75;
+    border: 1px solid green;
+}
+
+/**** 三角部分ホバー時　緑******/
+.tab_item:hover::before,
+.tab_item:hover::after { /* 三角 */
+  content: '';
+  border: 14px solid transparent;
+  position: absolute;
+  left: 50%;
+  margin-left: -14px;
+}
+.tab_item:hover::before { /* 線になる部分 */
+  border-top-color: green; /* 吹き出しの線の色と同じ色 */
+  bottom: -28px;
+}
+.tab_item:hover::after { /* 地の部分 */
+  border-top-color: #fff; /* 吹き出しの背景色と同じ色 */
+  bottom: -27px;
+}  
+
+/*ラジオボタンを全て消す*/
+input[name="tab_item"] {
+  display: none;
+}
+
+/*タブ切り替えの中身のスタイル*/
+.tab_content {
+  display: none;
+  padding: 40px 40px 0;
+  clear: both;
+  overflow: hidden;
+    position: absolute;
+    top: 20%;
+}
+.c-txtsp a {
+    text-decoration: underline;
+}
+.c-txtsp table{
+    height: 280px;
+}
+.c-txtsp th{
+    width: 210px;
+    padding-left: 50px;
+}
+/*選択されているタブのコンテンツのみを表示*/
+#all:checked ~ #all_content,
+#news:checked ~ #news_content,
+#recruit:checked ~ #recruit_content {
+  display: block;
+}
+
+/*選択されているタブのスタイルを変える*/
+.tabs input:checked + .tab_item {
+  background-color: green;
+  color: #fff;
+}
+.tabs input:checked + .tab_item::after
+{ /* 三角 */
+    border-top-color: green;
+}
+
+/***アクセス*******/
+
+.access{
+    margin-top: 250px;
+    margin-bottom: 100px;
+}
+.map {
+    width: 600px;
+    margin: 30px auto;
+}
+.access p {
+    text-align: center;
+}
+/***★★★★フッター★★★★********/
+.footer_wrapper {
+  background-color: #d7e6d7;
+  
+}
+.footer_box{
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.footer_right {
+  display: flex;
+
+}
+.footer_box p{
+  display: grid;
+  font-size: 28px;
+  
+  align-items: center;
+}
+.footer_list {
+  margin: 30px;
+}
+.footer_list li:hover a{
+  color: green;
+}
+
+
+/***〇〇〇〇〇〇〇〇〇〇〇〇〇***/
+/***メディアクエリ********/
+/***〇〇〇〇〇〇〇〇〇〇〇〇〇***/
