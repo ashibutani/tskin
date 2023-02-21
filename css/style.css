@@ -38,21 +38,22 @@ body {
     box-shadow: 0 3px 5px -5px black;
 }
 .pc_nav {
-   width: 700px;
+  width: 100%;
+  display: flex;
     
     
 }
 .pc_nav ul {
-    display: flex;
-    width: 700px;
-    margin-top: 25px;
-    margin-left: 180px;
+  display: flex;
+  width: 74%;
+  align-items: center;
+  justify-content: end;
     
     
     
 }
 .pc_nav li {
-    margin: 0 20px;
+  margin: 12px;
 }
 .header_wrapper p{
     font-size: 23px;
@@ -451,3 +452,6 @@ input[name="tab_item"] {
 /***〇〇〇〇〇〇〇〇〇〇〇〇〇***/
 /***メディアクエリ********/
 /***〇〇〇〇〇〇〇〇〇〇〇〇〇***/
+@media (max-width: 1024px){
+
+}
